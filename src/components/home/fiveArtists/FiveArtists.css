@@ -1,0 +1,11 @@
+.container-fixed-length-for-artists {
+    width: 1142px;
+    height: auto;
+    display: flex;
+    /*border: 1px solid rgba(250, 0, 0, 0.29);*/
+    margin-top: 45px;
+    justify-content: left;
+    gap: 38px;
+    flex-wrap: wrap;
+}
+

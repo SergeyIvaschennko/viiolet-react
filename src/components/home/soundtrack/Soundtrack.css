@@ -1,0 +1,155 @@
+.audio-container {
+    width: 624px; /* Здесь */
+    height: 55px;
+    position: relative;
+    background-color: rgba(217, 217, 217, 0.26);
+    border-radius: 5px;
+}
+.audio-square {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    background-color: #4b4b40;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+}
+
+.audio-square > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.audio-text-name {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    top: 8px;
+    left: 69px;
+    font-size: 15px;
+}
+
+.audio-text-artist {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #909090;
+    top: 32px;
+    left: 69px;
+    font-size: 12px;
+}
+.audio-time-container {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 10px;
+}
+.audio-text-time {
+    /*position: absolute;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    /*top: 18.25px;*/
+    /*right: 10px;*/
+    font-size: 13px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.audio-container:hover .overlay {
+    opacity: 1;
+}
+
+.audio-container:hover {
+    background-color: rgba(217, 217, 217, 0.49);
+}
+
+.audio-container .overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.audio-container.playing .overlay {
+    opacity: 1;
+}
+
+.audio-container.playing {
+    background-color: rgba(217, 217, 217, 0.49);
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.triangle {
+    margin-left: 3px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 12px solid #000; /* Толщина и цвет левой стороны */
+    transform: rotate(0deg); /* Поворот на 90 градусов */
+}
+
+
+.heart-container {
+    top: 17.5px;
+    right: 48px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.heart {
+    transition: fill 0.1s ease;
+}
+
+.heart.bookmarked {
+    fill: #10439F;
+}
+
+
+.heart:hover {
+    fill: #10439F;
+}
+
+.audio-container:hover .heart-container {
+    opacity: 1;
+}
+
+.audio-container.playing .heart-container {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+

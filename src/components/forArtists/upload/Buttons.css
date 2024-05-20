@@ -1,0 +1,33 @@
+.submit-button {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#color-black {
+    background-color: #333333;
+    border: 1.3px solid #333333;
+    color: white;
+}
+
+#add {
+    background-color: #0099FF;
+    width: 200px;
+    border: 1.3px solid #0099FF;
+    color: white;
+}
+
+#cancel-button {
+    background-color: white;
+    border: 1px solid #333333;
+    color: #333333;
+    width: 100px;
+}
+

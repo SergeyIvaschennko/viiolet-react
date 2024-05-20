@@ -1,0 +1,50 @@
+.error-input {
+    border-color: red;
+}
+
+.input {
+    width: 300px;
+    padding: 10px;
+    border: 1.3px solid #333333;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    color: #333333;
+}
+
+#time {
+    width: 30px;
+    padding: 2px 5px 2px 7px;
+    border-radius: 3px;
+}
+
+#select {
+    width: 100px;
+    padding: 1.25px 0 1.25px 3px;
+    border-radius: 3px;
+}
+
+
+.file-input {
+    position: absolute;
+    left: -9999px;
+}
+
+.custom-file-input {
+    display: inline-block;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+}
+
+.custom-file-input:hover {
+    background-color: #f0f0f0; /* Изменение цвета при наведении */
+}
+
+

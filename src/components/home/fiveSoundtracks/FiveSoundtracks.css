@@ -1,0 +1,9 @@
+.container-fixed-length-for-music {
+    height: auto;
+    display: flex;
+    /*border: 1px solid rgba(250, 0, 0, 0.29);*/
+    margin-top: 45px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}

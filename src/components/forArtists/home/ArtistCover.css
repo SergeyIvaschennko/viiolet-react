@@ -1,0 +1,42 @@
+.container-media{
+    margin-top: 40px;
+    width: 1142px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: -10px;
+}
+
+.container-media > img{
+    width: 1142px;
+    height: 567px;
+    object-fit: cover;
+
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-media::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Цвет фона с прозрачностью */
+    z-index: 1; /* Установка z-index, чтобы блок был поверх изображения */
+}
+
+.textcountry {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 100px;
+    z-index: 2;
+}

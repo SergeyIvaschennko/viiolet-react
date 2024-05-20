@@ -1,0 +1,136 @@
+.container-fixed-length-for-header {
+    width: 1157px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 22px;
+    /*border: 1px solid rgba(250, 0, 0, 0.29);*/
+}
+
+.pink-rectangle {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    margin-top: 56px;
+    padding-right: 15px;
+    padding-left: 19px;
+}
+
+.pink-rectangle::before {
+    content: "";
+    position: absolute;
+    background-color: #FF99CC;
+    filter: blur(41px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 0;
+}
+
+.green-rectangle {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    margin-top: 56px;
+    padding-right: 15px;
+    padding-left: 19px;
+}
+
+.green-rectangle::before {
+    content: "";
+    position: absolute;
+    background-color: #8DECB4;
+    filter: blur(41px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 0;
+}
+
+.yellow-rectangle {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    margin-top: 56px;
+    padding-right: 15px;
+    padding-left: 19px;
+}
+
+.yellow-rectangle::before {
+    content: "";
+    position: absolute;
+    background-color: #FFC436;
+    filter: blur(41px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 0;
+}
+
+.purple-rectangle {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    margin-top: 56px;
+    padding-right: 15px;
+    padding-left: 19px;
+}
+
+.purple-rectangle::before {
+    content: "";
+    position: absolute;
+    background-color: #40F8FF;
+    filter: blur(41px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 0;
+}
+
+.transparent-rectangle {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    margin-top: 56px;
+    padding-right: 15px;
+    padding-left: 19px;
+}
+
+.transparent-rectangle::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    filter: blur(41px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 0;
+}
+
+.header-for-content {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #10439F;
+    z-index: 1;
+    line-height: 20px;
+}
+
+.view-more {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #10439F;
+    margin-top: 75px;
+    margin-right: 5px;
+}

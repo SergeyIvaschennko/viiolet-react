@@ -1,0 +1,114 @@
+html {
+    /*background-color: #ECECEC;*/
+    background-color: #f6f6f6;
+    padding: 5px;
+}
+
+body {
+    margin: 0;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-family: initial;
+}
+
+.container {
+    background-color: #ffffff;
+    height: calc(100vh - 10px);
+    /*height: calc(100vh - 85px);*/
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    /*margin-left: 0px;*/
+    /*position: fixed;*/
+}
+
+.menu {
+    min-width: 200px;
+    height: calc(100vh - 10px);
+    background-color: white;
+    overflow-y: auto;
+    border-right: 0.5px solid rgba(144, 144, 144, 0.31);
+}
+
+.content {
+    width: auto;
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.logo { /*логотип */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #10439F;
+    font-size: 40px;
+    margin-top: 14px;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+
+.profile {
+    width: 44px;
+    height: 44px;
+    background-color: #D9D9D9;
+    border-radius: 50%; /* Делаем круг с помощью border-radius */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 18px; /* Отступ сверху */
+    right: 18px;
+}
+
+.container-search-one {
+    /*border: 1px solid rgba(44, 44, 44, 0.29);*/
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.5px solid rgba(144, 144, 144, 0.31);
+    position: relative;
+}
+.container-search-two {
+    width: 1142px;
+}
+
+.search-box {
+    width: 468px;
+    height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.29);
+    border-radius: 11px;
+    background-color: transparent;
+    margin-top: 17px;
+    display: flex;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #000; /* Цвет текста */
+    outline: none;
+}
+
+.search-icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 22px;
+    height: 22px;
+    content: url('./img/search.png'); /* Замените 'path_to_your_search_icon.svg' на путь к вашей иконке лупы */
+    margin-right: 10px; /* Отступ между иконкой и текстовым полем */
+}
+
+.content::-webkit-scrollbar {
+    width: 0; /* Устанавливаем нулевую ширину скроллбара */
+}
+
+
+
+
+

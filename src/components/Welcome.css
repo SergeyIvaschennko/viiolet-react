@@ -1,0 +1,57 @@
+#welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 10px);
+}
+
+.welcome-greeting-container {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+#welcome {
+    color: rgba(51, 51, 51, 0.90);
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    padding-bottom: 0;
+}
+
+#viiolet {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    animation: colorChange 5s infinite;
+    padding-top: 0;
+}
+
+@keyframes colorChange {
+    0% { color: #654ea3; }
+    50% { color: #eaafc8; }
+    100% { color: #654ea3; }
+
+}
+
+.btn-container {
+    margin-bottom: 130px;
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.btn-primary {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 0 10px;
+    border: 3px solid rgba(51, 51, 51, 0.90);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+}

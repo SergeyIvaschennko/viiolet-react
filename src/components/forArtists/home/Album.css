@@ -1,0 +1,57 @@
+.album-head {
+    /*width: 624px;*/
+    width: 950px;
+    height: auto;
+    background-color: rgba(217, 217, 217, 0);
+    margin-bottom: 2px;
+    position: relative;
+}
+
+#head-pic {
+    width: 200px;
+    height: 200px;
+}
+
+.container-album-artist {
+    position: absolute;
+    top: 0px;
+    left: 220px;
+}
+
+#head-album-name {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+#head-genre-name {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.head-artist-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    margin-left: 2px;
+}
+
+.head-down {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(126, 119, 119, 0.38);
+}
+
+#album {
+    bottom: 5px;
+    left: 220px;
+}
+
+#data {
+    bottom: 5px;
+    right: 0;
+}
+
+

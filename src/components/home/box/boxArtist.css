@@ -1,0 +1,90 @@
+.artist-box {
+    width: 198px;
+    height: auto;
+    position: relative;
+}
+
+.artist-pic {
+    width: 198px;
+    height: 198px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.artist-pic > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-pic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Начальное значение прозрачности */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+    border-radius: 10px;
+}
+
+.artist-box:hover .artist-pic::before {
+    background-color: rgba(0, 0, 0, 0.2); /* Затемнение при наведении */
+}
+
+.artist-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 198px;
+    height: 198px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.artist-inscr {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 9px;
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+.artist-box:hover .artist-inscr {
+    color: #10439F; /* Изменение цвета текста при наведении */
+}
+
+.artist-blackout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 198px;
+    height: 198px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Градиент от темного внизу к прозрачному сверху */
+}
+
+.artist-name-capsule {
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 3px 6px 3px 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    bottom: 8px;
+    left: 8px;
+    margin-right: 5px;
+}

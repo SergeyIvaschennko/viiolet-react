@@ -23,6 +23,18 @@ export const getRoleFromToken = () => {
     return null;
 };
 
+export const getNameFromToken = () => {
+    const token = getAuthToken();
+    if (token) {
+        const decodedToken = jwtDecode(token);
+        return decodedToken.sub; // Или другое поле, где хранится имя в вашем JWT
+    }
+    return null;
+};
+
+
+
+
 axios.defaults.baseURL = 'http://localhost:8080';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 

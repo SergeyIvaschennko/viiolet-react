@@ -1,7 +1,6 @@
 import * as React from 'react';
-import classNames from 'classnames';
 
-export default class LoginForm extends React.Component {
+export default class SignUp extends React.Component {
 
     constructor(props) {
         super(props);
@@ -32,21 +31,24 @@ export default class LoginForm extends React.Component {
     render() {
         return (
 
-
-            <form onSubmit={this.onSubmitLogin}>
+            <form onSubmit={this.onSubmitRegister}>
 
                 <div className="form-outline mb-4">
-                    <input type="username" id="username" name= "username" className="form-control" onChange={this.onChangeHandler}/>
+                    <input type="text" id="email" name="email" className="form-control" onChange={this.onChangeHandler}/>
+                    <label className="form-label" htmlFor="email">Email</label>
+                </div>
+
+                <div className="form-outline mb-4">
+                    <input type="text" id="username" name="username" className="form-control" onChange={this.onChangeHandler}/>
                     <label className="form-label" htmlFor="username">Username</label>
                 </div>
 
                 <div className="form-outline mb-4">
-                    <input type="password" id="loginPassword" name="password" className="form-control" onChange={this.onChangeHandler}/>
-                    <label className="form-label" htmlFor="loginPassword">Password</label>
+                    <input type="password" id="registerPassword" name="password" className="form-control" onChange={this.onChangeHandler}/>
+                    <label className="form-label" htmlFor="registerPassword">Password</label>
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block mb-4">Sign in</button>
-
+                <button type="submit" className="btn btn-primary btn-block mb-3">Sign in</button>
             </form>
 
         );

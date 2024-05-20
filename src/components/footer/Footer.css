@@ -1,0 +1,33 @@
+.text_foot {
+    font-family: arial,sans-serif;
+    color: #2E2E33;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+
+.down {
+    color: rgba(46, 46, 51, 0.7);
+    font-size: 12px;
+    text-decoration: none;
+    padding-bottom: 20px;
+    font-weight: lighter;
+}
+
+#main-text-foot {
+    justify-content: space-between;
+}
+
+#second-text-foot {
+    justify-content: space-between;
+}
+
+.horizontal-line {
+    margin-top: 50px;
+    flex-grow:1;
+    height: 0.5px;
+    background-color: rgba(144, 144, 144, 0.31);
+}
+
+

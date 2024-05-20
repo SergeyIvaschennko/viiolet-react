@@ -1,14 +1,12 @@
 import * as React from 'react';
-
+import "./Welcome.css"
 export default class WelcomeContent extends React.Component {
     render() {
         return (
-            <div className="row justify-content-md-center">
-                <div className="jumbotron jumbotron-fluid">
-                    <div className="container">
-                        <h1 className="display-4">Welcome</h1>
-                        <p className="lead">Login to see protected content.</p>
-                    </div>
+            <div>
+                <div className="welcome-greeting-container">
+                    <span id="welcome">- What is love?</span>
+                    <div id="viiolet">- v i i o l e t</div>
                 </div>
             </div>
         );
