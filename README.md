@@ -97,8 +97,6 @@ The application uses PostgreSQL as its database for storing user information and
 
    ![the weeknd's album page](https://sun9-67.userapi.com/impg/_778Xy1WqqGuFzJW9QA9wpqNJ59GkZdmu47lEQ/KeiUzIk1JTQ.jpg?size=2560x1383&quality=96&sign=341f103edd335943b190ac1728fe604c&type=album)
 
-   ![the weeknd's album page](https://sun9-67.userapi.com/impg/_778Xy1WqqGuFzJW9QA9wpqNJ59GkZdmu47lEQ/KeiUzIk1JTQ.jpg?size=2560x1383&quality=96&sign=341f103edd335943b190ac1728fe604c&type=album)
-
    ![Junost' v stile punk album page](https://sun9-44.userapi.com/impg/3K2zuI4nXalihx79-3lEMXBvwrFwvk5RCvMW7w/iNTmj8UtDMY.jpg?size=2560x1383&quality=96&sign=92237a207a77fb11dc627da65217c3a5&type=album)
 
 
