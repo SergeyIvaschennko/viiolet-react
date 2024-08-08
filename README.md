@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Music Streaming Application V I O L E T
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a music streaming application built using Spring Boot. The application consists of two microservices:
 
-## Available Scripts
+1. **User Service**: Handles user authentication and authorization using JWT.
+2. **Music Service**: Manages music tracks, playlists, and provides streaming functionality.
 
-In the project directory, you can run:
+The application uses PostgreSQL as its database for storing user information and music data.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User registration and authentication with JWT tokens.
+- Secure access to music content based on user roles.
+- CRUD operations for music tracks and playlists.
+- Streaming music tracks.
+- Separation of concerns through microservices architecture.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Architecture
 
-### `npm test`
+- **User Service**: 
+  - Handles user-related operations: registration, login, and JWT token management.
+  - Exposes REST APIs for user management.
+  - Communicates with PostgreSQL to store and retrieve user data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Music Service**:
+  - Manages music tracks and playlists.
+  - Handles streaming of music content.
+  - Exposes REST APIs for managing music content.
+  - Communicates with PostgreSQL to store and retrieve music data.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Java**: Programming language used for developing the microservices.
+- **Spring Boot**: Framework for building the microservices.
+- **Spring Security**: For securing the APIs with JWT.
+- **PostgreSQL**: Relational database for storing user and music data.
+- **JWT (JSON Web Token)**: For authentication and secure communication between microservices.
+- **Docker**: Containerization of services (optional).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Java 17 or higher
+- Maven or Gradle
+- PostgreSQL
+- Docker (optional, for containerization)
 
-### `npm run eject`
+## Setup and Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/your-username/music-streaming-app.git
+    cd music-streaming-app
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Set Up PostgreSQL Database:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Create a database for each microservice:
+     ```sql
+     CREATE DATABASE user_service_db;
+     CREATE DATABASE music_service_db;
+     ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - Update the database connection properties in the `application.yml` or `application.properties` files for each service.
 
-## Learn More
+3. **Build and Run the Microservices:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - **User Service:**
+      ```bash
+      cd user-service
+      ./mvnw spring-boot:run
+      ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    - **Music Service:**
+      ```bash
+      cd music-service
+      ./mvnw spring-boot:run
+      ```
 
-### Code Splitting
+4. **Access the Application:**
+   
+   - The User Service will be available at `http://localhost:8080`.
+   - The Music Service will be available at `http://localhost:8081`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Pics:**
 
-### Analyzing the Bundle Size
+   ![Start page](https://sun9-13.userapi.com/impg/1m3LBVu5uTX4vZSHnMt3J7beaXKMLMftUfAujw/hgxJtAUjydM.jpg?size=2560x1383&quality=96&sign=8bde1d67c1efef2481f85728495b516b&type=album)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
